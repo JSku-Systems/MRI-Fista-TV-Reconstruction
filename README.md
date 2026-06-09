@@ -26,6 +26,7 @@ Download instructions are provided on the dataset’s Hugging Face page:
 https://huggingface.co/datasets/FLowOak/mri_knee
 
 **Citations**
+
 fastMRI (original dataset):  
 Zbontar, J., Knoll, F., Sriram, A., et al.
 fastMRI: An Open Dataset and Benchmarks for Accelerated MRI.  
