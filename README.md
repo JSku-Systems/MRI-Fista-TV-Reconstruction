@@ -11,7 +11,31 @@ The reconstruction problem is then formulated as a convex optimisation task comb
 
 The third phase applies the pipeline to real single‑coil knee MRI data, using a variable‑density Cartesian mask and a tuned FISTA–TV solver to reconstruct accelerated acquisitions. Quantitative metrics, error maps, and qualitative inspection confirm that the optimised configuration achieves stable convergence and effective artefact suppression under realistic acquisition conditions. Together, these phases establish a complete classical reconstruction workflow that forms the foundation for the deployment architecture developed in Notebook 2.
 
+### Phase 3 Dataset Access & Citation
 
+Notebook 1 uses the following dataset:
+
+FLowOak/mri_knee ; Single‑coil knee MRI dataset (HDF5 format), hosted on Hugging Face derived from the fastMRI dataset (Zbontar et al., 2019).
+
+Required file: `file1000254.h5`
+
+This file is not included in this repository due to licensing restrictions.
+
+Download instructions are provided on the dataset’s Hugging Face page:
+
+https://huggingface.co/datasets/FLowOak/mri_knee
+
+**Citations**
+fastMRI (original dataset):  
+Zbontar, J., Knoll, F., Sriram, A., et al.
+fastMRI: An Open Dataset and Benchmarks for Accelerated MRI.  
+arXiv:1811.08839, 2018.
+
+FLowOak/mri_knee (derivative dataset):  
+FLowOak.
+MRI Knee Dataset (Single‑Coil).  
+Hugging Face, 2025.
+url : https://huggingface.co/datasets/FLowOak/mri_knee
 
 ## Notebook 2 — MRI Software Architecture and Deployment (Phase 4)
 This notebook implements Phase 4, transitioning the reconstruction pipeline into a modular software component:
