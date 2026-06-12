@@ -1,7 +1,6 @@
 # MRI Reconstruction with FISTA–TV and FastAPI Deployment
 
-This repository presents a two‑part project implementing a classical compressed‑sensing MRI reconstruction pipeline and its transition into a modular software architecture.
-The work is organised into four phases: Phases 1–3 (reconstruction methods and evaluation) are implemented in Notebook 1, and Phase 4 (software architecture and deployment) is implemented in Notebook 2.
+This project implements a classical compressed‑sensing MRI reconstruction workflow and shows how an exploratory computational imaging pipeline can be organised into a structured software system. Notebook 1 develops the reconstruction method, beginning with controlled phantom experiments and extending to clinical validation using a FISTA–TV solver. Notebook 2 builds on this foundation by packaging the reconstruction logic into a modular software architecture with a programmatic interface, API service, and containerised execution environment.
 
 ## Notebook 1 — Compressed Sensing MRI Reconstruction (Phases 1–3)
 
