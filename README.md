@@ -48,9 +48,9 @@ Building on this structure, the notebook introduces a FastAPI service that expos
 
 ## Live API (FastAPI)
 
-Interactive OpenAPI documentation for the MRI reconstruction microservice.
+Interactive OpenAPI documentation for the MRI reconstruction microservice
 
-https://Jsku-Systems-mri-reconstruction-api.hf.space/docs
+https://jsku-systems-mri-reconstruction-api.hf.space/docs
 
 ## License
 
