@@ -40,19 +40,8 @@ Hugging Face, 2025.
 url : https://huggingface.co/datasets/FLowOak/mri_knee
 
 ## Notebook 2 — MRI Software Architecture and Deployment (Phase 4)
-This notebook implements Phase 4, transitioning the reconstruction pipeline into a modular software component:
 
-* FastAPI service exposing a reconstruction endpoint
+Notebook 2 transitions the reconstruction workflow from the exploratory setting of Notebook 1 into a modular software system. The work developed in earlier phases is consolidated into an object‑oriented engine that provides a `reconstruct() function, giving the optimisation pipeline a clear entry point for programmatic use or integration into external applications. This establishes the foundation for a structured implementation that can be reused or extended beyond the notebook environment.
 
-* Integration of the FISTA–TV solver into a callable interface
-
-* Pydantic‑based input validation
-
-* Local API testing
-
-* Optional Docker container for reproducible execution
-
-This phase demonstrates how a reconstruction method can be structured for integration, experimentation, or downstream tooling.
-
-
+Building on this structure, the notebook introduces a FastAPI service that exposes a /reconstruct endpoint for remote execution. Structured Pydantic models handle input validation, and the service is packaged into a Docker container to ensure consistent execution across environments. A Pytest script verifies that the reconstruction engine behaves as expected under controlled conditions. Together, these components enable the reconstruction pipeline to run outside the notebook environment and be incorporated into other systems.
 
