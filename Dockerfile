@@ -7,7 +7,7 @@
 # (Docker Desktop, Azure Container Apps, AWS ECS, etc.)
 
 
-# Base image: lightweight Python runtime
+# Base image: Python runtime
 
 FROM python:3.10-slim
 
