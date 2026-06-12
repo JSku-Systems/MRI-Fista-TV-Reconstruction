@@ -42,6 +42,9 @@ Notebook 2 transitions the reconstruction workflow from the exploratory settin
 
 Building on this structure, the notebook introduces a FastAPI service that exposes a `/reconstruct` endpoint for remote execution. Structured Pydantic models handle input validation, and the service is packaged into a Docker container to ensure consistent execution across environments. A Pytest script verifies that the reconstruction engine behaves as expected under controlled conditions. Together, these components enable the reconstruction pipeline to run outside the notebook environment and be incorporated into other systems.
 
+## Platform Notes For Deployment
+* Local development, Docker, and cloud deployments use port 8000 (standard FastAPI/Uvicorn).
+* Hugging Face Spaces require port 7860.
 
 ## License
 
