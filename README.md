@@ -26,12 +26,12 @@ https://huggingface.co/datasets/FLowOak/mri_knee
 
 ### References
 
-fastMRI (original dataset):  
+**fastMRI (original dataset):**  
 Zbontar, J., Knoll, F., Sriram, A., et al.
 fastMRI: An Open Dataset and Benchmarks for Accelerated MRI.  
 arXiv:1811.08839, 2018.
 
-FLowOak/mri_knee (derivative dataset):  
+**FLowOak/mri_knee (derivative dataset):**  
 FLowOak.
 MRI Knee Dataset (Single‑Coil).  
 Hugging Face, 2025.
