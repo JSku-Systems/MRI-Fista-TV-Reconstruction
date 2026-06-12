@@ -11,10 +11,10 @@ from compressed_sensing_mri import CompressedSensingMRI
 
 # Pydantic request model
 class ReconstructionRequest(BaseModel):
-    kspace_real: list      # flattened real part of k-space
-    kspace_imag: list      # flattened imaginary part of k-space
-    mask: list             # flattened sampling mask (0/1)
-    shape: tuple           # original 2D shape (H, W)
+    kspace_real: list[float]      # flattened real part of k-space
+    kspace_imag: list[float]      # flattened imaginary part of k-space
+    mask: list[int]               # flattened sampling mask (0/1)
+    shape: list[int]              # original 2D shape (H, W)
 
 
 # Pydantic response model
