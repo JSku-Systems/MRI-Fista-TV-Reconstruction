@@ -44,3 +44,7 @@ Notebook 2 transitions the reconstruction workflow from the exploratory settin
 
 Building on this structure, the notebook introduces a FastAPI service that exposes a `/reconstruct` endpoint for remote execution. Structured Pydantic models handle input validation, and the service is packaged into a Docker container to ensure consistent execution across environments. A Pytest script verifies that the reconstruction engine behaves as expected under controlled conditions. Together, these components enable the reconstruction pipeline to run outside the notebook environment and be incorporated into other systems.
 
+
+## License
+
+This project is released under the MIT License.
