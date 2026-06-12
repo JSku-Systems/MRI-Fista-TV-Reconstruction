@@ -52,16 +52,6 @@ Interactive OpenAPI documentation for the MRI reconstruction microservice
 
 https://jsku-systems-mri-reconstruction-api.hf.space/docs
 
-
-
-
-
-Uploading FastAPI demo.mp4…
-
-
-
-
-
 ## License
 
 This project is released under the MIT License.
