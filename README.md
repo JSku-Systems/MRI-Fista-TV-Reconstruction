@@ -36,8 +36,6 @@ FLowOak.
 MRI Knee Dataset (Single‑Coil).  
 Hugging Face, 2025.
 
-url : https://huggingface.co/datasets/FLowOak/mri_knee
-
 ## Notebook 2 — MRI Software Architecture and Deployment (Phase 4)
 
 Notebook 2 transitions the reconstruction workflow from the exploratory setting of Notebook 1 into a modular software system. The work developed in earlier phases is consolidated into an object‑oriented engine that provides a `reconstruct()` function, giving the optimisation pipeline a clear entry point for use within other Python modules or integration into external applications. This establishes the foundation for a structured implementation that can be reused or extended beyond the notebook environment.
