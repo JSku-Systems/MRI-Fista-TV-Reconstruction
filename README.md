@@ -52,6 +52,12 @@ Interactive OpenAPI documentation for the MRI reconstruction microservice
 
 https://jsku-systems-mri-reconstruction-api.hf.space/docs
 
+
+
+https://github.com/user-attachments/assets/955386bb-584c-437b-bc57-b356d520cf1b
+
+
+
 ## License
 
 This project is released under the MIT License.
