@@ -46,17 +46,18 @@ Building on this structure, the notebook introduces a FastAPI service that expos
 * Local development, Docker, and cloud deployments use port 8000 (standard FastAPI/Uvicorn).
 * Hugging Face Spaces require port 7860.
 
-## Live API (FastAPI)
+## Live API (FastAPI) Access
 
-Interactive OpenAPI documentation for the MRI reconstruction microservice
+Interactive OpenAPI documentation for the MRI reconstruction microservice:
 
 https://jsku-systems-mri-reconstruction-api.hf.space/docs
 
+## Demo
 
+Below is a short demonstration of interacting with the deployed MRI Reconstruction API using the built‑in Swagger UI. 
+The video shows submitting a synthetic k-space payload and receiving the reconstructed magnitude image and runtime.
 
 https://github.com/user-attachments/assets/955386bb-584c-437b-bc57-b356d520cf1b
-
-
 
 ## License
 
