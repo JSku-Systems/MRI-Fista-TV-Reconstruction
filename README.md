@@ -8,7 +8,7 @@ Notebook 1 implements the classical compressed‑sensing MRI reconstruction pi
 
 The reconstruction problem is then formulated as a convex optimisation task combining a masked Fourier acquisition model with an edge‑preserving Total Variation prior. Reconstruction is performed using a FISTA–TV algorithm, which alternates between data‑consistency enforcement and a TV‑based proximal step. Experiments on clean and noisy phantom data demonstrate substantial suppression of aliasing artefacts and stable convergence behaviour, providing a baseline for clinical evaluation that follows.
 
-The third phase applies the pipeline to real single‑coil knee MRI data, using a variable‑density Cartesian mask and a tuned FISTA–TV solver to reconstruct accelerated acquisitions. Quantitative metrics, error maps, and qualitative inspection confirm that the optimised configuration achieves stable convergence and effective artefact suppression under realistic acquisition conditions. Together, these phases establish a complete classical reconstruction workflow that forms the foundation for the deployment architecture developed in Notebook 2.
+The third phase applies the pipeline to real single‑coil knee MRI data, using a variable‑density Cartesian mask and a tuned FISTA–TV solver to reconstruct accelerated acquisitions. Quantitative metrics, error maps, and qualitative inspection confirm that the optimised configuration achieves stable convergence and effective artefact suppression under realistic acquisition conditions. Together, these phases complete the classical reconstruction pipeline, which Notebook 2 then extends into a deployable service.
 
 ### Phase 3 Dataset Access
 
