@@ -1,6 +1,6 @@
 # MRI Reconstruction with FISTA–TV and FastAPI Deployment
 
-This project implements a classical compressed‑sensing MRI reconstruction workflow and shows how an exploratory computational imaging pipeline can be organised into a structured software system. Notebook 1 develops the reconstruction method, beginning with controlled phantom experiments and extending to clinical validation using a FISTA–TV solver. Notebook 2 builds on this foundation by packaging the reconstruction logic into a modular software architecture with a programmatic interface, API service, and containerised execution environment.
+This project implements a classical compressed‑sensing MRI reconstruction workflow and shows how a notebook-based reconstruction pipeline is extended into a deployable software system. Notebook 1 develops the reconstruction method, beginning with controlled phantom experiments and extending to clinical validation using a FISTA–TV solver. Notebook 2 builds on this foundation by packaging the reconstruction logic into a modular software architecture with a programmatic interface, API service, and containerised execution environment.
 
 ## Notebook 1 — Compressed Sensing MRI Reconstruction (Phases 1–3)
 
@@ -40,7 +40,7 @@ Hugging Face, 2025.
 
 Notebook 2 transitions the reconstruction workflow from the exploratory setting of Notebook 1 into a modular software system.The reconstruction logic from earlier phases is wrapped into a class with a single `reconstruct()` entry point, making it callable from other modules or external applications.This establishes the foundation for a structured implementation that can be reused or extended beyond the notebook environment.
 
-Building on this structure, the notebook introduces a FastAPI service that exposes a `/reconstruct` endpoint for remote execution. Structured Pydantic models handle input validation, and the service is packaged into a Docker container to ensure consistent execution across environments. A Pytest script verifies that the reconstruction engine behaves as expected under controlled conditions.At this point the pipeline is a self-contained service rather than a notebook.
+Building on this structure, the notebook introduces a FastAPI service that exposes a `/reconstruct` endpoint for remote execution. Structured Pydantic models handle input validation, and the service is packaged into a Docker container to ensure consistent execution across environments. A Pytest script verifies that the reconstruction engine behaves as expected under controlled conditions. At this point the pipeline is a self-contained service rather than a notebook.
 
 ## Platform Notes For Deployment
 * Local development, Docker, and cloud deployments use port 8000 (standard FastAPI/Uvicorn).
